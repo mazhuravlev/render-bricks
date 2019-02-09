@@ -7,7 +7,6 @@ canvas.height = 150;
 document.body.appendChild(canvas);
 const input = document.createElement("textarea");
 input.oninput = (e) => {
-    console.log(e);
     const context = canvas.getContext("2d");
     context.clearRect(0,0,canvas.width, canvas.height);
     const bricks = createBricks((e.target as HTMLTextAreaElement).value);
